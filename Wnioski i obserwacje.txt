@@ -1,0 +1,11 @@
+Wnioski i obserwacje:
+
+Analizaując nieznormalizowane dane wejściowe można zaobserwować:
+	-wiadomości treściwe są krótkie, najczęściej do 100 znaków oraz 20 słów, a wiadomości spam z regóły mają więcjej niż 130 znaków i 20 słów,
+	-statystyczny użytkownik sms używa krókich słów i skrótowców, a wiadomości spam używają dłuższych wyrazów, lecz nie jest to duża różnica,
+	-oba typy wiadomości posiadajązbliżoną liczbę "stopwords", wyrazów składających się z samych dużych liter, oraz cyfr
+	-wiadomości spam zawierają dwa razy więcej znaków specjalnych, niż wiadomości normalne.
+
+Analizując wyniki różnych konfiguracji modelu szkolenia, można zauważyć, że najskuteczniejszą z wybranych metod okazała się 
+radialna funkcja bazowa z dokłądnością 98,34888729361091% oraz f1 = 0,99 dla "ham" oraz f1 = 0,92 dla "spam" dla gammy = 1,0
+Najmniejszą dokłądnością 88,58578607322326% oraz f1 = 0,94 dla "ham" oraz f1 = 0,02 dla "spam" dla poly oraz gammy = 0,5.
